@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>10</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>WriteDataE</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="-140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ALUResE</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="-20"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>clk</string>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>WriteDataM</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ALUResM</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>en</string>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PCPlus4E</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PCPlus4M</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RdE</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RdM</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes/>
+      <pos x="300" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RegWriteE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>RegWriteM</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ResultSrcE</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ResultSrcM</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>2</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes/>
+      <pos x="300" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>MemWriteE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>MemWriteM</string>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="600"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="360" y="0"/>
+      <p2 x="400" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="0"/>
+      <p2 x="300" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="480"/>
+      <p2 x="300" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-100"/>
+      <p2 x="300" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="260"/>
+      <p2 x="300" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="580"/>
+      <p2 x="300" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="100"/>
+      <p2 x="300" y="100"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="420"/>
+      <p2 x="300" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="520"/>
+      <p2 x="300" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="-140"/>
+      <p2 x="300" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="140"/>
+      <p2 x="300" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="620"/>
+      <p2 x="300" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="400"/>
+      <p2 x="400" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="400"/>
+      <p2 x="300" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="240"/>
+      <p2 x="400" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="240"/>
+      <p2 x="300" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="-20"/>
+      <p2 x="300" y="-20"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="340"/>
+      <p2 x="280" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="20"/>
+      <p2 x="300" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="500"/>
+      <p2 x="400" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="500"/>
+      <p2 x="300" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="-120"/>
+      <p2 x="400" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-120"/>
+      <p2 x="300" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="280"/>
+      <p2 x="260" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="600"/>
+      <p2 x="400" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="600"/>
+      <p2 x="300" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="120"/>
+      <p2 x="400" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="120"/>
+      <p2 x="300" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="220"/>
+      <p2 x="300" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="380"/>
+      <p2 x="300" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="-120"/>
+      <p2 x="260" y="0"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="400"/>
+      <p2 x="260" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="280"/>
+      <p2 x="260" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="240"/>
+      <p2 x="260" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="500"/>
+      <p2 x="260" y="600"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="120"/>
+      <p2 x="260" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="0"/>
+      <p2 x="260" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="-100"/>
+      <p2 x="280" y="20"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="420"/>
+      <p2 x="280" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="340"/>
+      <p2 x="280" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="260"/>
+      <p2 x="280" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="520"/>
+      <p2 x="280" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="140"/>
+      <p2 x="280" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="280" y="20"/>
+      <p2 x="280" y="140"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
